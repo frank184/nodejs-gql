@@ -1,0 +1,36 @@
+.DebugPrint-dark {
+  background-color: #212529;
+}
+
+.DebugPrint-light {
+  background-color: #424649;
+}
+
+pre {
+  display: block;
+  padding: 1em 0px;
+  margin: 0;
+  overflow: none;
+}
+
+strong {
+  font-weight: 100;
+  padding: 1em 0px;
+}
+
+.DebugPrint-light .btn-dark {
+  background-color: #424649;
+  border-color: #424649;
+}
+
+.DebugPrint-light .btn-dark:hover {
+  background-color: #484c4f;
+  border-color: #484c4f;
+  box-shadow: #484c4f;
+}
+
+.DebugPrint-light .btn-dark:active {
+  background-color: #4e5255 !important;
+  border-color: #4e5255 !important;
+  box-shadow: #4e5255 !important;
+}

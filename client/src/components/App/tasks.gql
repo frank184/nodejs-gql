@@ -1,0 +1,16 @@
+query GetTasks {
+  tasks {
+    id
+    title
+    description
+    completed
+    userId
+
+    user {
+      id
+      email
+      firstName
+      lastName
+    }
+  }
+}

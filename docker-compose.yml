@@ -1,0 +1,30 @@
+services:
+  client:
+    build:
+      context: client
+    command: yarn start
+    environment:
+      - REACT_APP_API_URL=http://localhost:3001/graphql
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    ports:
+      - 3000:3000
+    depends_on:
+      - server
+  server:
+    build:
+      context: server
+    command: yarn dev
+    environment:
+      - NODE_ENV=development
+      - DB_ADAPT=sqlite
+      - DB_USER=root
+      - DB_HOST=localhost
+      - DB_NAME=nodejs-gql
+      - SQL_LOG=true
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    ports:
+      - 3001:3001
