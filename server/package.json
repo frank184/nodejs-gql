@@ -9,8 +9,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
+    "express-pino-logger": "^7.0.0",
     "graphql": "^16.6.0",
     "graphql-depth-limit": "^1.1.0",
+    "pino": "^8.11.0",
     "sequelize": "^6.29.0",
     "sequelize-cli": "^6.6.0",
     "sqlite3": "^5.1.4",
@@ -22,7 +24,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "mocha": "^10.2.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "pino-pretty": "^9.4.0"
   },
   "scripts": {
     "test": "mocha",

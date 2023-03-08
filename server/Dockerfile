@@ -1,4 +1,4 @@
-FROM node:14.17.5-slim
+FROM node:slim
 
 RUN apt-get update && apt-get -y install yarn sqlite3
 
