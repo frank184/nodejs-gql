@@ -8,6 +8,6 @@ module.exports = new Sequelize(
     host: global.config.db.host,
     dialect: global.config.db.dialect,
     storage: global.config.db.storage,
-    logging: global.config.db.logging,
+    logging: global.config.db.sql_logger,
   },
 );

@@ -1,6 +1,6 @@
-// Construct a schema, using GraphQL schema language
 const graphql = require('graphql');
-const QueryType = require('./QueryType');
+const query = require('./query');
+const mutation = require('./mutation');
 
-const schema = new graphql.GraphQLSchema({ query: QueryType });
+const schema = new graphql.GraphQLSchema({ query, mutation });
 module.exports = schema;

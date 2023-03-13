@@ -2,10 +2,12 @@ require('dotenv').config();
 const path = require('path');
 
 const {
-  NODE_ENV, HOST, PORT, DB_ADAPT, DB_USER, DB_PASS, DB_HOST, DB_NAME, SQL_LOG, LOG_LEVEL,
+  NODE_ENV, HOST, PORT, DB_ADAPT, DB_USER, DB_PASS, DB_HOST, DB_NAME,
+  SQL_LOG, LOG_LEVEL, JWT_SECRET,
 } = process.env;
 
 const config = {
+  jwt_secret: JWT_SECRET,
   env: {
     node: NODE_ENV,
     development: NODE_ENV === 'development',
@@ -19,7 +21,7 @@ const config = {
     log_level: LOG_LEVEL || 'info',
   },
   db: {
-    logging: SQL_LOG === 'true' ? console.log : false,
+    sql_logger: SQL_LOG === 'true' ? console.log : false,
     database: `${DB_NAME}-${NODE_ENV}`,
     dialect: DB_ADAPT,
     username: DB_USER,

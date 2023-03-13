@@ -2,13 +2,23 @@
   {
     "id": 1,
     "email": "admin@mail.com",
+    "password": "password",
     "firstName": "Mr.",
-    "lastName": "Admin"
+    "lastName": "Admin",
+    "admin": true
   },
   {
     "id": 2,
     "email": "john@doe.com",
+    "password": "password",
     "firstName": "John",
+    "lastName": "Doe"
+  },
+  {
+    "id": 3,
+    "email": "jane@doe.com",
+    "password": "password",
+    "firstName": "Jane",
     "lastName": "Doe"
   }
 ]
